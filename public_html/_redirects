@@ -1,4 +1,4 @@
-﻿/Home /index.html 200
+/Home /index.html 200
 /o2k /index1.html 200
 /About-us /whoweare.html 200
 /Thank-you /thank-you.html 200
@@ -71,8 +71,6 @@
 /How-to-Choose-the-Right-AV-Setup-Start-with-Experience-Not-Specs  /blog41.html 200
 /Power-Failures-Cost-More-Than-You-Think-Heres-Why-Smart-Infrastructure-Matters-in-AV  /blog42.html 200
 /Designing-AV-Spaces-That-Evolve-How-O2K-Is-Reimagining-The-Beyonders-Centre  /blog43.html 200
-
-# 301 redirects (old .html URLs to clean URLs)
 /index.html      /Home      301
 /index1.html     /o2k       301
 /whoweare.html   /About-us  301
