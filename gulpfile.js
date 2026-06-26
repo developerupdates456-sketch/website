@@ -11,20 +11,19 @@ const postcss = require('gulp-postcss');
 const cssnext = require('postcss-cssnext');
 const pxtorem = require('postcss-pxtorem');
 const reporter = require('postcss-reporter');
-const syntaxScss = require('postcss-scss');
 const header = require('gulp-header');
 
 const banner = [
   '/**',
   ' * Timeline - a horizontal / vertical timeline component',
-  ' * v. 1.1.5',
+  ' * v1.1.5',
   ' * Copyright Mike Collins',
   ' * MIT License',
   ' */',
   '',
 ].join('\n');
 
-gulp.task('build-js', () => {
+gulp.task('build-js', function () {
   return gulp
     .src('public_html/src/js/timeline.js')
     .pipe(plumber())
@@ -36,11 +35,10 @@ gulp.task('build-js', () => {
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(header(banner))
-    .pipe(gulp.dest('public_html/dist/js/'))
-    .pipe(livereload());
+    .pipe(gulp.dest('public_html/dist/js'));
 });
 
-gulp.task('build-css', () => {
+gulp.task('build-css', function () {
   const processors = [
     cssnext({
       browsers: ['last 5 versions'],
@@ -68,19 +66,17 @@ gulp.task('build-css', () => {
     .pipe(postcss(processors))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cleanCSS())
-    .pipe(gulp.dest('public_html/dist/css/'))
-    .pipe(livereload());
+    .pipe(gulp.dest('public_html/dist/css'));
 });
 
-gulp.task('images', () => {
+gulp.task('images', function () {
   return gulp
     .src('public_html/src/images/**')
     .pipe(imagemin())
-    .pipe(gulp.dest('public_html/dist/images'))
-    .pipe(livereload());
+    .pipe(gulp.dest('public_html/dist/images'));
 });
 
-gulp.task('watch', () => {
+gulp.task('watch', function () {
   livereload.listen();
 
   gulp.watch(
@@ -89,19 +85,19 @@ gulp.task('watch', () => {
   );
 
   gulp.watch(
-    'public_html/src/images/**',
-    gulp.series('images')
+    'public_html/src/js/**/*.js',
+    gulp.series('build-js')
   );
 
   gulp.watch(
-    'public_html/src/js/**/*.js',
-    gulp.series('build-js')
+    'public_html/src/images/**',
+    gulp.series('images')
   );
 });
 
 gulp.task(
-  'default',
-  gulp.series(
-    gulp.parallel('build-js', 'build-css', 'images')
-  )
+  'build',
+  gulp.parallel('build-js', 'build-css', 'images')
 );
+
+gulp.task('default', gulp.series('build'));
