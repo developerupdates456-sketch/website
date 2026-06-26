@@ -1,5 +1,4 @@
-@'
-# Clean URL rewrites (Apache RewriteRule equivalents)
+﻿# Clean URL rewrites (Apache RewriteRule equivalents)
 /Home                            /index.html          200
 /o2k                             /index1.html         200
 /About-us                        /whoweare.html       200
@@ -148,4 +147,3 @@
 /blog41.html    /How-to-Choose-the-Right-AV-Setup-Start-with-Experience-Not-Specs  301
 /blog42.html    /Power-Failures-Cost-More-Than-You-Think-Heres-Why-Smart-Infrastructure-Matters-in-AV  301
 /blog43.html    /Designing-AV-Spaces-That-Evolve-How-O2K-Is-Reimagining-The-Beyonders-Centre  301
-'@ | Set-Content -Encoding utf8 public_html\_redirects
