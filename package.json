@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "Office 2000 - AV Solutions Website (Cloudflare Pages)",
+  "engines": {
+    "node": ">=22.18.0"
+  },
   "scripts": {
     "build": "gulp build-js build-css images",
     "deploy": "npx wrangler pages deploy public_html --branch main"
