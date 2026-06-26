@@ -1,10 +1,9 @@
-﻿# Clean URL rewrites (Apache RewriteRule equivalents)
-/Home                            /index.html          200
-/o2k                             /index1.html         200
-/About-us                        /whoweare.html       200
-/Thank-you                       /thank-you.html      200
-/Beyonders-centre                /beyonderscentre.html 200
-/Crestron-Sightline-Experience   /crestron.html       200
+﻿/Home /index.html 200
+/o2k /index1.html 200
+/About-us /whoweare.html 200
+/Thank-you /thank-you.html 200
+/Beyonders-centre /beyonderscentre.html 200
+/Crestron-Sightline-Experience /crestron.html 200
 /Our-expertise                   /ourexpertise.html   200
 /Case-studies                    /casestudies.html    200
 /News                            /news.html           200
