@@ -1,0 +1,357 @@
+/* ============================================================
+   O2K COMMON STYLES — shared across all pages
+   ============================================================ */
+
+/* ---------- PAGE HEADER ---------- */
+.page-header {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+}
+.page-header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-header-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+.page-header__inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.page-header__inner h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+.thm-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 0;
+  list-style: none;
+}
+.thm-breadcrumb li {
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}
+.thm-breadcrumb li a {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.thm-breadcrumb li a:hover {
+  opacity: 1;
+}
+
+/* ---------- ABOUT / EXPERTISE SECTION ---------- */
+.about-one {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+.about-one__text-2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+.about-one__text-2 a img {
+  max-width: 200px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* ---------- FEATURE GRID (Expertise Icons) ---------- */
+.feature-one__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px 0 0 0;
+  margin: 0;
+  list-style: none;
+}
+.feature-one__single {
+  flex: 0 0 calc(20% - 20px);
+  min-width: 160px;
+}
+.feature-one__content {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 30px 20px 20px;
+  text-align: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.feature-one__content:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+.feature-one__content a {
+  text-decoration: none;
+  color: inherit;
+}
+.feature-one__icon {
+  margin-bottom: 12px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-one__icon img {
+  height: 55px;
+  width: auto;
+  display: block;
+}
+.feature-one__title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin: 8px 0 0 0;
+  line-height: 1.4;
+}
+
+/* ---------- SECTION TITLE ---------- */
+.section-title {
+  margin-bottom: 40px;
+}
+.section-title.text-left {
+  text-align: left;
+}
+.section-title__title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background: #1a1a1a;
+  color: #cccccc;
+  position: relative;
+}
+.site-footer__top {
+  padding: 80px 0 40px;
+}
+.footer-widget__title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.footer-widget__about-text {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #aaaaaa;
+}
+.footer-widget__services-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer-widget__services-list li {
+  margin-bottom: 10px;
+}
+.footer-widget__services-list li a {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-widget__services-list li a:hover {
+  color: #EE1323;
+}
+.footer-widget__contact-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footer-widget__contact-list li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.footer-widget__contact-list li .icon {
+  flex-shrink: 0;
+  color: #EE1323;
+  font-size: 18px;
+}
+.footer-widget__contact-list li .text h5 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 4px;
+}
+.footer-widget__contact-list li .text p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  color: #aaaaaa;
+  margin: 0;
+}
+.footer-widget__contact-list li .text p a {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+.footer-widget__contact-list li .text p a:hover {
+  color: #EE1323;
+}
+.site-footer__bottom {
+  border-top: 1px solid #333;
+  padding: 20px 0;
+  text-align: center;
+}
+.site-footer__bottom p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+.site-footer__social {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+.site-footer__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #2a2a2a;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.site-footer__social a:hover {
+  background: #EE1323;
+}
+.footer-widget__column {
+  margin-bottom: 30px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+  .feature-one__single {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+  .page-header__inner h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 600px) {
+  .feature-one__single {
+    flex: 0 0 calc(50% - 20px);
+    min-width: 140px;
+  }
+  .feature-one__content {
+    padding: 20px 14px 16px;
+  }
+  .feature-one__icon img {
+    height: 44px;
+  }
+  .feature-one__title {
+    font-size: 14px;
+  }
+  .page-header {
+    padding: 80px 0;
+  }
+  .page-header__inner h2 {
+    font-size: 28px;
+  }
+  .section-title__title {
+    font-size: 26px;
+  }
+  .site-footer__top {
+    padding: 50px 0 20px;
+  }
+}
+
+/* ---------- ICOMOON ICONS ---------- */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon9d3d.eot?l394az');
+  src:  url('fonts/icomoon9d3d.eot?l394az#iefix') format('embedded-opentype'),
+    url('fonts/icomoon9d3d.ttf?l394az') format('truetype'),
+    url('fonts/icomoon9d3d.woff?l394az') format('woff'),
+    url('fonts/icomoon9d3d.svg?l394az#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-image-gallery1:before { content: "\e927"; }
+.icon-magnifying-glass:before { content: "\e926"; }
+.icon-phone-call:before { content: "\e900"; }
+.icon-location:before { content: "\e901"; }
+.icon-wallpaper:before { content: "\e902"; }
+.icon-high-quality:before { content: "\e903"; }
+.icon-wallpaper-1:before { content: "\e904"; }
+.icon-mind:before { content: "\e905"; }
+.icon-wallpaper-2:before { content: "\e906"; }
+.icon-best-price:before { content: "\e907"; }
+.icon-wallpaper-3:before { content: "\e908"; }
+.icon-paint:before { content: "\e909"; }
+.icon-wallpaper-4:before { content: "\e90a"; }
+.icon-image-gallery:before { content: "\e90b"; }
+.icon-wallpaper-5:before { content: "\e90c"; }
+.icon-quotation:before { content: "\e90d"; }
+.icon-like:before { content: "\e90e"; }
+.icon-bathroom:before { content: "\e90f"; }
+.icon-expert:before { content: "\e910"; }
+.icon-list:before { content: "\e911"; }
+.icon-experts:before { content: "\e912"; }
+.icon-wallpaper-6:before { content: "\e913"; }
+.icon-email:before { content: "\e914"; }
+.icon-pin:before { content: "\e915"; }
+.icon-checked:before { content: "\e916"; }
+.icon-house:before { content: "\e917"; }
+.icon-handshake:before { content: "\e918"; }
+.icon-apartment:before { content: "\e919"; }
+.icon-good-review:before { content: "\e91a"; }
+.icon-award:before { content: "\e91b"; }
+.icon-paint-palette:before { content: "\e91c"; }
+.icon-confirmation:before { content: "\e91d"; }
+.icon-plus-symbol:before { content: "\e91e"; }
+.icon-furnitures:before { content: "\e91f"; }
+.icon-wallpaper-7:before { content: "\e920"; }
+.icon-terrace:before { content: "\e921"; }
+.icon-long-paper-roll:before { content: "\e922"; }
+.icon-wallpaper-8:before { content: "\e923"; }
+.icon-message:before { content: "\e924"; }
+.icon-programmer:before { content: "\e925"; }
