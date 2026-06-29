@@ -1,0 +1,28 @@
+# --- Videos (large files, access via external links) ---
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.m4v
+*.flv
+*.wmv
+
+# --- Archives ---
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# --- Build output ---
+dist/
+
+# --- Dependencies ---
+node_modules/
+package-lock.json
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
